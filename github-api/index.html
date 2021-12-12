@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Information Checker </title>
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: .2rem;
+        }
+        html,body{
+            min-height: 99vh;
+            width: 99vw;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #fafafa;
+        }
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 0;
+            color: blueviolet;
+        }
+        input,button{
+            padding: .5rem;
+            border: 1px solid #ccc;
+            background-color: rgb(240, 219, 33);
+            border-radius: 1rem;
+            margin-bottom: .5rem;
+        }
+        button{
+            cursor: pointer;
+        }
+        li{
+            list-style: none;
+            font-size: large;
+            color: black;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Github Information Checker</h1>
+    <input type="text" id="username" placeholder="Enter Github Username" />
+    <button id="btn" type="submit">Check</button>
+    <div id="profile"></div>
+    <script src="scripts.js"></script>
+</body>
+</html>
